@@ -1,0 +1,6 @@
+info:
+  name: 系统网关服务
+  contact: 系统网关服务
+
+server:
+  port: 8765
