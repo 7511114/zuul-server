@@ -37,7 +37,7 @@
 
 
 
-	<logger name="com.dongnaoedu" level="debug" />
+	<logger name="com.bing" level="debug" />
 	<logger name="com.netflix.eureka" level="warn" />
 	<logger name="org.springcloud" level="warn" />
 	<root level="warn">

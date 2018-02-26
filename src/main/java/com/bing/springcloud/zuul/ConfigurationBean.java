@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 // spring会将对应配置项的值注入进来的
-@ConfigurationProperties("zuul.tokenFilter")
+@ConfigurationProperties("tom.zuul.tokenFilter")
 public class ConfigurationBean {
 	// 这个列表存的是routeId。这个列表里面的路由，不需要进行token校验，在TokenValidataFilter中会用到
 	private List<String> noAuthenticationRoutes;

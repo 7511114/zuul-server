@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 // 写一个默认的hystrix降级策略
 @Component
 // 如果没有这个配置项或者配置为false，就不实例化
-@ConditionalOnProperty(value = "tony.zuul.defaultFallback.enabled", matchIfMissing = false)
+@ConditionalOnProperty(value = "zuul.defaultFallback.enabled", matchIfMissing = false)
 public class DefaultFallbackProvider implements FallbackProvider{
 	@Override
 	public String getRoute() {
