@@ -9,14 +9,14 @@ eureka:
   instance:
     # 心跳间隔
     leaseRenewalIntervalInSeconds: 10
-    hostname: ${HOSTNAME}
+    hostname: ${HOSTNAME:localhost}
 
 spring:
   application:
     name: zuul-server
   cloud:
     client:
-      hostname: ${HOSTNAME}
+      hostname: ${HOSTNAME:localhost}
     config:
       discovery:
         # 使用eureka发现配置中心服务
